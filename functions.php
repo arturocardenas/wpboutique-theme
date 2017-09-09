@@ -48,6 +48,6 @@ add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 
 function add_footer_info() {
     echo "</br><p> © Incivil Underground 2017</p>";
-    echo "Sitio web diseñado por <a href='http://www.arcasystems.net/'>ArcaSystems</a>"
+    echo "Sitio web diseñado por <a href='http://www.arcasystems.net/'>ArcaSystems</a>";
 }
 add_action('wp_footer', 'add_footer_info');
