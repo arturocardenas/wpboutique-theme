@@ -16,7 +16,6 @@ module.exports = function( grunt ) {
 				}]
 			}
 		},
-
 		// Watch changes for assets.
 		watch: {
 			css: {
