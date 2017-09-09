@@ -34,3 +34,12 @@ require_once( 'inc/class-boutique-integrations.php' );
   $wp_admin_bar->remove_menu('wp-logo');
 }
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+
+function add_google_analytics() {
+    echo '<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>';
+    echo '<script type="text/javascript">';
+    echo 'var pageTracker = _gat._getTracker("UA-106179217-1");';
+    echo 'pageTracker._trackPageview();';
+    echo '</script>';
+}
+add_action('wp_footer', 'add_google_analytics');
