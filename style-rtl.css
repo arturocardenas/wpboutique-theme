@@ -17,6 +17,9 @@ body {
   background: #303030;
   -webkit-font-smoothing: subpixel-antialiased; }
 
+.site-info {
+  display: none; }
+
 body,
 button,
 input,
