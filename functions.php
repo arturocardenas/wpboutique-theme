@@ -46,7 +46,8 @@ require_once( 'inc/class-boutique-integrations.php' );
 }
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 
-function add_google_analytics() {
-    echo "</br><p> Escribiendo en footer</p>";
+function add_footer_info() {
+    echo "</br><p> © Incivil Underground 2017</p>";
+    echo "Sitio web diseñado por <a href='http://www.arcasystems.net/'>ArcaSystems</a>"
 }
-add_action('wp_footer', 'add_google_analytics');
+add_action('wp_footer', 'add_footer_info');
