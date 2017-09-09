@@ -29,6 +29,27 @@ require_once( 'inc/class-boutique-integrations.php' );
  * of this theme is performed. Instead, add your customisations to a plugin such as
  * https://github.com/woothemes/theme-customisations
  */
+
+ if ( !is_admin() ) {
+      wp_deregister_script('jquery');
+      wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"), false);
+      wp_enqueue_script('jquery');
+   }
+
+   remove_action('wp_head', 'wp_generator');
+   remove_action('wp_head', 'feed_links', 2);
+   remove_action('wp_head', 'index_rel_link');
+   remove_action('wp_head', 'wlwmanifest_link');
+   remove_action('wp_head', 'feed_links_extra', 3);
+   remove_action('wp_head', 'start_post_rel_link', 10, 0);
+   remove_action('wp_head', 'parent_post_rel_link', 10, 0);
+   remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
+
+   function admin_favicon() {
+       echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_bloginfo('stylesheet_directory').'/images/favicon.png" />';
+   }
+   add_action('admin_head', 'admin_favicon');
+
  function mytheme_admin_bar_render() {
   global $wp_admin_bar;
   $wp_admin_bar->remove_menu('wp-logo');
