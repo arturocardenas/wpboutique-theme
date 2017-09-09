@@ -29,3 +29,4 @@ require_once( 'inc/class-boutique-integrations.php' );
  * of this theme is performed. Instead, add your customisations to a plugin such as
  * https://github.com/woothemes/theme-customisations
  */
+ add_filter( 'show_admin_bar', '__return_false' );
