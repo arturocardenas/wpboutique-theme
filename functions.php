@@ -29,9 +29,3 @@ require_once( 'inc/class-boutique-integrations.php' );
  * of this theme is performed. Instead, add your customisations to a plugin such as
  * https://github.com/woothemes/theme-customisations
  */
-
- function mytheme_admin_bar_render() {
-  global $wp_admin_bar;
-  $wp_admin_bar->remove_menu('wp-logo');
-}
-add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
