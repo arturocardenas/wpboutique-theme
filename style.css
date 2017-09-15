@@ -16,6 +16,11 @@ body {
   -webkit-font-smoothing: subpixel-antialiased; }
 
 /* ARTURO CARDENAS */
+.site-info {
+  margin: 0px;
+  padding: 0px;
+  display: none; }
+
 .storefront-sorting {
   display: none; }
 
