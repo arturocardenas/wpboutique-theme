@@ -24,6 +24,9 @@ body {
 .storefront-sorting .orderby {
   display: none; }
 
+.storefront-sorting .page-numbers .current {
+  background-color: #cccccc; }
+
 /* END */
 body,
 button,
