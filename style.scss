@@ -31,7 +31,12 @@ body {
 }
 .storefront-sorting {
 	.orderby {
-		display:none;	
+		display:none;
+	}
+	.page-numbers{
+		.current {
+			background-color: #cccccc;
+		}
 	}
 }
 /* END */
