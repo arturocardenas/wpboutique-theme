@@ -24,7 +24,10 @@ body {
 .storefront-sorting .orderby {
   display: none; }
 
-.storefront-sorting .page-numbers .current {
+.storefront-sorting .page-numbers {
+  background-color: #ffffff; }
+
+.storefront-sorting span {
   background-color: #cccccc; }
 
 /* END */
