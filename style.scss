@@ -33,11 +33,8 @@ body {
 	.orderby {
 		display:none;
 	}
-	.page-numbers:active{
+	span.page-numbers{
 			background-color: green;
-	}
-	span {
-		background-color: red;
 	}
 }
 /* END */
