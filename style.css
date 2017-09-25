@@ -24,10 +24,8 @@ body {
 .storefront-sorting .orderby {
   display: none; }
 
-.storefront-sorting .page-numbers {
+.storefront-sorting .page-numbers:active {
   background-color: green; }
-  .storefront-sorting .page-numbers .current {
-    background-color: yellow; }
 
 .storefront-sorting span {
   background-color: red; }
