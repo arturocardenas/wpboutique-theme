@@ -24,7 +24,7 @@ body {
 .storefront-sorting .orderby {
   display: none; }
 
-.storefront-sorting span.page-numbers {
+.storefront-sorting .page-numbers {
   background-color: green; }
 
 /* END */
