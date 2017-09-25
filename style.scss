@@ -34,10 +34,13 @@ body {
 		display:none;
 	}
 	.page-numbers{
+		.current {
+			background-color: yellow;
+		}
 			background-color: green;
 	}
 	span {
-		background: red;
+		background-color: red;
 	}
 }
 /* END */

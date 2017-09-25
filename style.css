@@ -26,9 +26,11 @@ body {
 
 .storefront-sorting .page-numbers {
   background-color: green; }
+  .storefront-sorting .page-numbers .current {
+    background-color: yellow; }
 
 .storefront-sorting span {
-  background: red; }
+  background-color: red; }
 
 /* END */
 body,
