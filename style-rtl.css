@@ -21,6 +21,9 @@ body {
   padding: 0px;
   display: none; }
 
+.storefront-sorting .orderby {
+  display: none; }
+
 /* END */
 body,
 button,
